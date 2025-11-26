@@ -64,7 +64,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/zaebal">
       <div className="App">
         <Header user={user} onLogout={handleLogout} />
         <main className="main-content">

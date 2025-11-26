@@ -2,7 +2,7 @@
   "name": "illuminos",
   "version": "1.0.0",
   "description": "Modern streaming service platform",
-  "homepage": "https://sssdap.github.io/illuminos2",
+  "homepage": "https://sssdap.github.io/zaebal",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.2",
