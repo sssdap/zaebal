@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/illuminos2/static/css/main.1a11711d.css",
+    "main.js": "/illuminos2/static/js/main.16ef8b45.js",
+    "static/js/488.4da15c15.chunk.js": "/illuminos2/static/js/488.4da15c15.chunk.js",
+    "index.html": "/illuminos2/index.html",
+    "main.1a11711d.css.map": "/illuminos2/static/css/main.1a11711d.css.map",
+    "main.16ef8b45.js.map": "/illuminos2/static/js/main.16ef8b45.js.map",
+    "488.4da15c15.chunk.js.map": "/illuminos2/static/js/488.4da15c15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a11711d.css",
+    "static/js/main.16ef8b45.js"
+  ]
+}
