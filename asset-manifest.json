@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/illuminos2/static/css/main.1a11711d.css",
-    "main.js": "/illuminos2/static/js/main.16ef8b45.js",
-    "static/js/488.4da15c15.chunk.js": "/illuminos2/static/js/488.4da15c15.chunk.js",
-    "index.html": "/illuminos2/index.html",
-    "main.1a11711d.css.map": "/illuminos2/static/css/main.1a11711d.css.map",
-    "main.16ef8b45.js.map": "/illuminos2/static/js/main.16ef8b45.js.map",
-    "488.4da15c15.chunk.js.map": "/illuminos2/static/js/488.4da15c15.chunk.js.map"
+    "main.css": "/zaebal/static/css/main.1a11711d.css",
+    "main.js": "/zaebal/static/js/main.5a7f604e.js",
+    "static/js/488.4da15c15.chunk.js": "/zaebal/static/js/488.4da15c15.chunk.js",
+    "index.html": "/zaebal/index.html",
+    "main.1a11711d.css.map": "/zaebal/static/css/main.1a11711d.css.map",
+    "main.5a7f604e.js.map": "/zaebal/static/js/main.5a7f604e.js.map",
+    "488.4da15c15.chunk.js.map": "/zaebal/static/js/488.4da15c15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a11711d.css",
-    "static/js/main.16ef8b45.js"
+    "static/js/main.5a7f604e.js"
   ]
 }
