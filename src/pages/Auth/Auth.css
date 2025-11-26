@@ -1,0 +1,245 @@
+/* Auth Page Styles */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1e3f 50%, #0a0e27 100%);
+}
+
+/* Auth Card */
+.auth-card {
+  background: rgba(26, 30, 63, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Auth Header */
+.auth-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.auth-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Auth Form */
+.auth-form {
+  margin-bottom: 2rem;
+}
+
+.auth-form .form-label {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.auth-input {
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: rgba(10, 14, 39, 0.6);
+  border: 2px solid rgba(108, 99, 255, 0.3);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+  background: rgba(10, 14, 39, 0.8);
+  border-color: #6c63ff;
+  color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+.auth-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.auth-input.is-invalid {
+  border-color: #ff6384;
+}
+
+.auth-input.is-invalid:focus {
+  border-color: #ff6384;
+  box-shadow: 0 0 0 0.2rem rgba(255, 99, 132, 0.25);
+}
+
+.invalid-feedback {
+  color: #ff6384;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Checkbox */
+.auth-checkbox {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-checkbox .form-check-input {
+  background-color: rgba(10, 14, 39, 0.6);
+  border: 2px solid rgba(108, 99, 255, 0.3);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.1rem;
+}
+
+.auth-checkbox .form-check-input:checked {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.auth-checkbox .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+/* Links */
+.forgot-link,
+.auth-link {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.forgot-link:hover,
+.auth-link:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+/* Auth Button */
+.auth-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(108, 99, 255, 0.5);
+}
+
+/* Auth Footer */
+.auth-footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-footer p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Demo Info */
+.demo-info {
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.demo-title {
+  color: #6c63ff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.demo-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  margin: 0.25rem 0;
+  font-family: 'Courier New', monospace;
+}
+
+.demo-note {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.alert-danger {
+  background: rgba(255, 99, 132, 0.2);
+  color: #ff6384;
+  border-left: 4px solid #ff6384;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 1.75rem;
+  }
+
+  .auth-subtitle {
+    font-size: 1rem;
+  }
+
+  .auth-input {
+    padding: 0.75rem 1rem;
+  }
+
+  .auth-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-page {
+    padding: 1rem 0;
+  }
+
+  .auth-card {
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+
+  .auth-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .demo-info {
+    padding: 1rem;
+  }
+
+  .demo-text {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,410 @@
+/* Subscription Page Styles */
+.subscription-page {
+  min-height: 100vh;
+  padding: 2rem 0 4rem;
+}
+
+/* Subscription Alert */
+.subscription-alert {
+  background: rgba(108, 99, 255, 0.2);
+  border: 1px solid rgba(108, 99, 255, 0.5);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Subscription Card */
+.subscription-card {
+  background: rgba(26, 30, 63, 0.6);
+  border: 2px solid rgba(108, 99, 255, 0.3);
+  border-radius: 20px;
+  overflow: visible;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.subscription-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(108, 99, 255, 0.6);
+  box-shadow: 0 20px 50px rgba(108, 99, 255, 0.4);
+}
+
+.subscription-card.popular {
+  border-color: #6c63ff;
+  box-shadow: 0 10px 40px rgba(108, 99, 255, 0.3);
+}
+
+.subscription-card.popular:hover {
+  box-shadow: 0 20px 60px rgba(108, 99, 255, 0.5);
+}
+
+/* Popular Badge */
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff6384 0%, #ff4d6d 100%);
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 99, 132, 0.5);
+}
+
+/* Plan Details */
+.subscription-card .card-body {
+  padding: 2.5rem 2rem;
+}
+
+.plan-name {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.plan-price {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.price-amount {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.price-currency {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 0.25rem;
+}
+
+.price-period {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 0.25rem;
+}
+
+/* Plan Features */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.plan-features li {
+  padding: 0.75rem 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.plan-features .feature-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Plan Button */
+.plan-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.plan-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(108, 99, 255, 0.5);
+}
+
+/* Features Section */
+.features-section {
+  margin-top: 5rem;
+  padding: 3rem 0;
+  background: rgba(26, 30, 63, 0.3);
+  border-radius: 20px;
+}
+
+.features-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c63ff 0%, #00d4ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4);
+}
+
+.feature-icon-large {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.feature-item h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Payment Modal */
+.payment-modal .modal-content {
+  background: rgba(26, 30, 63, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 20px;
+}
+
+.payment-modal-header {
+  border-bottom: 1px solid rgba(108, 99, 255, 0.3);
+  padding: 1.5rem 2rem;
+}
+
+.payment-modal-header .modal-title {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.payment-modal-header .btn-close {
+  filter: invert(1);
+}
+
+.payment-modal-body {
+  padding: 2rem;
+}
+
+/* Selected Plan Info */
+.selected-plan-info {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(108, 99, 255, 0.15);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+.selected-plan-info h4 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price-modal {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #6c63ff;
+  margin: 0;
+}
+
+/* Payment Input */
+.payment-input {
+  background: rgba(10, 14, 39, 0.6);
+  border: 2px solid rgba(108, 99, 255, 0.3);
+  color: #ffffff;
+  padding: 0.875rem 1.25rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.payment-input:focus {
+  background: rgba(10, 14, 39, 0.8);
+  border-color: #6c63ff;
+  color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+.payment-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.payment-modal-body .form-label {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Payment Security */
+.payment-security {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  padding: 1rem;
+  background: rgba(108, 99, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Payment Success */
+.payment-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00d4ff 0%, #6c63ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 40px rgba(108, 99, 255, 0.5);
+  animation: successPulse 1.5s ease-out;
+}
+
+.success-icon svg {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+@keyframes successPulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.payment-success h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.payment-success p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .features-section .section-title {
+    font-size: 2rem;
+  }
+
+  .plan-name {
+    font-size: 1.75rem;
+  }
+
+  .price-amount {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription-page {
+    padding: 1rem 0 3rem;
+  }
+
+  .subscription-card .card-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .plan-name {
+    font-size: 1.5rem;
+  }
+
+  .price-amount {
+    font-size: 2.5rem;
+  }
+
+  .features-section {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .features-section .section-title {
+    font-size: 1.75rem;
+  }
+
+  .feature-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feature-icon-large {
+    font-size: 1.5rem;
+  }
+
+  .feature-item h4 {
+    font-size: 1.25rem;
+  }
+
+  .payment-modal-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .plan-name {
+    font-size: 1.3rem;
+  }
+
+  .price-amount {
+    font-size: 2rem;
+  }
+
+  .price-currency {
+    font-size: 1.5rem;
+  }
+
+  .price-period {
+    font-size: 1rem;
+  }
+
+  .plan-features li {
+    font-size: 0.9rem;
+  }
+
+  .popular-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+}

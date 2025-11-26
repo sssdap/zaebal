@@ -1,0 +1,375 @@
+/* Home Page Styles */
+.home-page {
+  min-height: 100vh;
+}
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.3;
+}
+
+.hero-meta {
+  margin-bottom: 1.5rem;
+}
+
+.hero-meta .badge {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 550px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
+.hero-genres {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.genre-tag {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Search Section */
+.search-section {
+  padding: 3rem 0;
+  background: rgba(10, 10, 10, 0.5);
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.search-input {
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  font-size: 0.95rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.clear-search {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  padding: 0;
+  z-index: 2;
+}
+
+.clear-search:hover {
+  color: #ff6384;
+}
+
+.search-btn {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Genre Filter */
+.genre-filter {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.genre-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.genre-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.genre-btn.active {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+}
+
+.results-count {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  margin-left: 0.8rem;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.no-results p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-banner {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 100vh;
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+    align-items: flex-end;
+    padding-bottom: 3rem;
+  }
+
+  .hero-content {
+    padding: 0 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin: 0 auto 1.2rem;
+  }
+
+  .hero-meta {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-genres {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-meta .badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .genre-filter {
+    gap: 0.5rem;
+  }
+
+  .genre-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .search-input {
+    font-size: 1rem;
+    padding: 0.875rem 3rem 0.875rem 3rem;
+  }
+
+  .search-btn {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
